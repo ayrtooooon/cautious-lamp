@@ -1,10 +1,13 @@
+$color1:#181818;
+$color2:#101010;
+
 * {
     padding: 0;
     margin: 0;
 }
 
 main {
-    background-color: #101010;
+    background-color: $color2;
     color: lightgray;
 }
 
@@ -26,7 +29,7 @@ main {
 }
 
 nav {
-    background-color: #181818;
+    background-color: $color1;
 }
 
 .nav-link {
@@ -44,12 +47,13 @@ nav {
     width: 50px;
 }
 
-.barLogo:hover .barPic1 {
-    display: none;
-}
-
-.barLogo:hover .barPic2{
-    display: block;
+.barLogo:hover {
+    .barPic1{
+        display: none;
+    }
+    .barPic2{
+        display: block;
+    }
 }
 
 .nav-link {
@@ -151,24 +155,19 @@ nav {
     #menu-item1{
         filter: none;
     }
-
     #menu-item2{
         filter: none;
     }
-
     #menu-item3{
         filter: none;
     }
 }
-
 #menu-item1:hover{
     filter: none;
 }
-
 #menu-item2:hover{
     filter: none;
 }
-
 #menu-item3:hover{
     filter: none;
 }
@@ -181,13 +180,17 @@ footer {
     color: white;
 }
 
-footer h4 {
-    font-family: 'Yanone Kaffeesatz', sans-serif;
+footer { 
+    h4 {
+        font-family: 'Yanone Kaffeesatz', sans-serif;
+    }
 }
 
-footer .container {
+footer {
+    .container {
     padding: 10px 0;
     margin-bottom: 0px;
+    }
 }
 
 .ilink {

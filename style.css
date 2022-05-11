@@ -46,7 +46,6 @@ nav {
 .barLogo:hover .barPic1 {
   display: none;
 }
-
 .barLogo:hover .barPic2 {
   display: block;
 }
