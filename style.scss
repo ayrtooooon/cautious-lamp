@@ -1,0 +1,208 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    background-color: #101010;
+    color: lightgray;
+}
+
+.jumbotron {
+    background-image: url(pics/PAPEL\ NEGRO.jpg);
+    overflow: hidden;
+}
+
+#headerPic {
+    height: 200px;
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+
+#headerPic:hover {
+    backdrop-filter: blur(0px);
+}
+
+nav {
+    background-color: #181818;
+}
+
+.nav-link {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.barPic1 {
+    width: 50px;
+}
+
+.barPic2 {
+    display: none;
+    width: 50px;
+}
+
+.barLogo:hover .barPic1 {
+    display: none;
+}
+
+.barLogo:hover .barPic2{
+    display: block;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: whitesmoke;
+    transition: 0.5s;
+}
+
+.nav-link:hover {
+    letter-spacing: 5px;
+    color: white;
+}
+
+#menuHead1 {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.corc {
+    color: goldenrod;
+    font-weight: 900;
+}
+
+.princ {
+    font-size: 80px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.pPrinc {
+    border: goldenrod 0.5px;
+    border-style: solid;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    padding: 20px 0;
+}
+
+.menut {
+    text-transform: uppercase;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 600;
+    font-size: 50px;
+}
+
+.cMenu {
+    background: linear-gradient(to right, #101010, #181818, #101010);
+    transition: 0.5s;
+}
+
+@media only screen and (max-width: 576px) {
+    .cMenu {
+        background: linear-gradient(to bottom, #101010, #181818, #101010);
+    }
+}
+
+.imgMenu1 {
+    height: 350px;
+    display: block;
+    margin: 0px auto;
+}
+
+.container-fluid {
+    margin-left: 0px;
+}
+
+#menu-item1 {
+    padding: 150px 0;
+    padding-left: 100px;
+    background-image: url(pics/PAPEL\ NEGRO.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    filter: blur(2px);
+    transition: 0.5s;
+}
+
+#menu-item2 {
+    padding: 150px 0;
+    padding-left: 100px;
+    background-image: url(pics/h22.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    filter: blur(2px);
+    transition: 0.5s;
+}
+
+#menu-item3 {
+    padding: 150px 0;
+    padding-left: 100px;
+    background-image: url(pics/PAPEL\ NEGRO.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    filter: blur(2px);
+    transition: 0.5s;
+}
+
+@media only screen and (max-width: 576px) {
+    #menu-item1{
+        filter: none;
+    }
+
+    #menu-item2{
+        filter: none;
+    }
+
+    #menu-item3{
+        filter: none;
+    }
+}
+
+#menu-item1:hover{
+    filter: none;
+}
+
+#menu-item2:hover{
+    filter: none;
+}
+
+#menu-item3:hover{
+    filter: none;
+}
+
+footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-image: url(pics/PAPEL\ NEGRO.jpg);
+    color: white;
+}
+
+footer h4 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+footer .container {
+    padding: 10px 0;
+    margin-bottom: 0px;
+}
+
+.ilink {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.ilink:hover {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+
+#footerPic {
+    height: 50px;
+    margin: auto;
+    display: block;
+}
