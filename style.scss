@@ -12,7 +12,8 @@ main {
 }
 
 .jumbotron {
-    background-image: url(pics/PAPEL\ NEGRO.jpg);
+    background-image: url(pics/papel1.jpg);
+    background-size: 100%;
     overflow: hidden;
 }
 
@@ -122,9 +123,10 @@ nav {
 }
 
 #menu-item1 {
-    padding: 150px 0;
+    padding: 100px 0;
     padding-left: 100px;
-    background-image: url(pics/PAPEL\ NEGRO.jpg);
+    background-image: url(pics/papel1.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     filter: blur(2px);
@@ -132,9 +134,11 @@ nav {
 }
 
 #menu-item2 {
-    padding: 150px 0;
+    padding: 100px 0;
     padding-left: 100px;
-    background-image: url(pics/h22.jpg);
+    background-image: url(pics/papel2.jpeg);
+    background-size: 100%;
+    color: $color1;
     background-repeat: no-repeat;
     background-attachment: fixed;
     filter: blur(2px);
@@ -142,9 +146,10 @@ nav {
 }
 
 #menu-item3 {
-    padding: 150px 0;
+    padding: 100px 0;
     padding-left: 100px;
-    background-image: url(pics/PAPEL\ NEGRO.jpg);
+    background-image: url(pics/papel1.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     filter: blur(2px);
@@ -162,6 +167,7 @@ nav {
         filter: none;
     }
 }
+
 #menu-item1:hover{
     filter: none;
 }
@@ -172,25 +178,102 @@ nav {
     filter: none;
 }
 
+#galeriaItem1{
+    height: 500px;
+    border-style: hidden solid;
+    border-width: 5px;
+    border-color: $color2;
+    background-image: url(pics/tattoo1.jpeg);
+    background-repeat: none;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    filter: blur(2px);
+    transition: 0.5s;
+        h2{
+            text-align: center;
+            padding-top: 95%;
+            color: #101010;
+        }
+}
+#galeriaItem2{
+    height: 500px;
+    border-style: hidden solid;
+    border-width: 5px;
+    border-color: $color2;
+    background-image: url(pics/tattoo2.jpeg);
+    background-repeat: none;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    filter: blur(2px);
+    transition: 0.5s;
+        h2{
+            text-align: center;
+            padding-top: 95%;
+            color: #101010;
+        }
+}
+#galeriaItem3{
+    height: 500px;
+    border-style: hidden solid;
+    border-width: 5px;
+    border-color: $color2;
+    background-image: url(pics/estudio1.jpeg);
+    background-repeat: none;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    filter: blur(2px);
+    transition: 0.5s;
+        h2{
+            text-align: center;
+            padding-top: 95%;
+            color: lightgray;
+        }
+}
+
+@media only screen and (max-width: 576px) {
+    #galeriaItem1{
+        filter: none;
+    }
+    #galeriaItem2{
+        filter: none;
+    }
+    #galeriaItem3{
+        filter: none;
+    }
+}
+
+#galeriaItem1:hover{
+    filter: none;
+}
+#galeriaItem2:hover{
+    filter: none;
+}
+#galeriaItem3:hover{
+    filter: none;
+}
+
+#form {
+    padding: 50px 0;
+}
+
 footer {
+    padding: 80px 0px;
     left: 0;
     bottom: 0;
     width: 100%;
-    background-image: url(pics/PAPEL\ NEGRO.jpg);
+    background-color: $color2;
     color: white;
-}
-
-footer { 
+    text-align: center;
     h4 {
         font-family: 'Yanone Kaffeesatz', sans-serif;
     }
-}
-
-footer {
     .container {
-    padding: 10px 0;
-    margin-bottom: 0px;
-    }
+        padding: 10px 0;
+        margin-bottom: 0px;
+        }
 }
 
 .ilink {
@@ -203,9 +286,3 @@ footer {
     color: whitesmoke;
 }
 
-
-#footerPic {
-    height: 50px;
-    margin: auto;
-    display: block;
-}
