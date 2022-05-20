@@ -1,0 +1,31 @@
+{
+  "name": "kaytattoo",
+  "version": "1.0.0",
+  "description": "Sitio de Kayla Tattoo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss style.scss style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ayrtooooon/cautious-lamp.git"
+  },
+  "keywords": [
+    "Tattoo",
+    "Rosario",
+    "Tatuaje",
+    "Black"
+  ],
+  "author": "Ayrton",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ayrtooooon/cautious-lamp/issues"
+  },
+  "homepage": "https://github.com/ayrtooooon/cautious-lamp#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.16"
+  }
+}
