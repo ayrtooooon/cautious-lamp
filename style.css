@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Khand:wght@300&family=Teko&family=Yanone+Kaffeesatz:wght@200;400;600&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -95,6 +96,18 @@ nav {
   font-size: 50px;
 }
 
+.menut--color1 pink {
+  color: color1 pink;
+}
+
+.menut--color2 violet {
+  color: color2 violet;
+}
+
+.menut--color3 purple {
+  color: color3 purple;
+}
+
 .cMenu {
   background: linear-gradient(to right, #101010, #181818, #101010);
   transition: 0.5s;
@@ -187,10 +200,12 @@ nav {
   filter: blur(2px);
   transition: 0.5s;
 }
-#galeriaItem1 h2 {
+#galeriaItem1 h3 {
   text-align: center;
   padding-top: 95%;
   color: #101010;
+  font-family: "Teko", sans-serif;
+  font-size: 70px;
 }
 
 #galeriaItem2 {
@@ -206,10 +221,12 @@ nav {
   filter: blur(2px);
   transition: 0.5s;
 }
-#galeriaItem2 h2 {
+#galeriaItem2 h3 {
   text-align: center;
   padding-top: 95%;
   color: #101010;
+  font-family: "Teko", sans-serif;
+  font-size: 70px;
 }
 
 #galeriaItem3 {
@@ -225,10 +242,12 @@ nav {
   filter: blur(2px);
   transition: 0.5s;
 }
-#galeriaItem3 h2 {
+#galeriaItem3 h3 {
   text-align: center;
   padding-top: 95%;
   color: lightgray;
+  font-family: "Teko", sans-serif;
+  font-size: 70px;
 }
 
 @media only screen and (max-width: 576px) {
@@ -277,14 +296,22 @@ footer .container {
   margin-bottom: 0px;
 }
 
-.ilink {
-  text-decoration: none;
-  color: whitesmoke;
+.btn--red1 {
+  background-color: orange;
+  list-style: none;
+  padding: 5px 0;
 }
 
-.ilink:hover {
-  text-decoration: none;
-  color: whitesmoke;
+.btn--red2 {
+  background-color: lightblue;
+  list-style: none;
+  padding: 5px 0;
+}
+
+.btn--red3 {
+  background-color: limegreen;
+  list-style: none;
+  padding: 5px 0;
 }
 
 /*# sourceMappingURL=style.css.map */
