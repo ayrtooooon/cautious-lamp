@@ -144,10 +144,15 @@ $colores: (
     margin-left: 0px;
 }
 
+@mixin pics ($pic, $fcolor) {
+    background-image: $pic;
+    color: $fcolor;
+}
+
 #menu-item1 {
+    @include pics(url(pics/papel1.jpg), whitesmoke);
     padding: 100px 0;
     padding-left: 100px;
-    background-image: url(pics/papel1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -156,11 +161,10 @@ $colores: (
 }
 
 #menu-item2 {
+    @include pics(url(pics/papel2.jpeg), #181818);
     padding: 100px 0;
     padding-left: 100px;
-    background-image: url(pics/papel2.jpeg);
-    background-size: 100%;
-    color: $color2;
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     filter: blur(2px);
@@ -168,9 +172,9 @@ $colores: (
 }
 
 #menu-item3 {
+    @include pics(url(pics/papel1.jpg), whitesmoke);
     padding: 100px 0;
     padding-left: 100px;
-    background-image: url(pics/papel1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -298,6 +302,13 @@ $colores: (
 
 #form {
     padding: 50px 0;
+}
+
+.princ--1 {
+    @extend .princ;
+    text-transform: none;
+    border: none;
+    font-size: 22px;
 }
 
 footer {

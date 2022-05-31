@@ -17,13 +17,16 @@ main {
 
 #headerPic {
   height: 200px;
-  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
   border-radius: 5px;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
 #headerPic:hover {
-  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+          backdrop-filter: blur(0px);
 }
 
 nav {
@@ -48,6 +51,7 @@ nav {
 .barLogo:hover .barPic1 {
   display: none;
 }
+
 .barLogo:hover .barPic2 {
   display: block;
 }
@@ -55,6 +59,7 @@ nav {
 .nav-link {
   text-decoration: none;
   color: whitesmoke;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
@@ -73,7 +78,7 @@ nav {
   font-weight: 900;
 }
 
-.princ {
+.princ, .princ--1 {
   font-size: 80px;
   font-family: "Yanone Kaffeesatz", sans-serif;
   font-weight: 600;
@@ -109,15 +114,19 @@ nav {
 }
 
 .cMenu {
+  background: -webkit-gradient(linear, left top, right top, from(#101010), color-stop(#181818), to(#101010));
   background: linear-gradient(to right, #101010, #181818, #101010);
+  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
 @media only screen and (max-width: 576px) {
   .cMenu {
+    background: -webkit-gradient(linear, left top, left bottom, from(#101010), color-stop(#181818), to(#101010));
     background: linear-gradient(to bottom, #101010, #181818, #101010);
   }
 }
+
 .imgMenu1 {
   height: 350px;
   display: block;
@@ -129,62 +138,75 @@ nav {
 }
 
 #menu-item1 {
+  background-image: url(pics/papel1.jpg);
+  color: whitesmoke;
   padding: 100px 0;
   padding-left: 100px;
-  background-image: url(pics/papel1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  filter: blur(2px);
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
 #menu-item2 {
+  background-image: url(pics/papel2.jpeg);
+  color: #181818;
   padding: 100px 0;
   padding-left: 100px;
-  background-image: url(pics/papel2.jpeg);
-  background-size: 100%;
-  color: #181818;
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  filter: blur(2px);
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
 #menu-item3 {
+  background-image: url(pics/papel1.jpg);
+  color: whitesmoke;
   padding: 100px 0;
   padding-left: 100px;
-  background-image: url(pics/papel1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  filter: blur(2px);
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
 @media only screen and (max-width: 576px) {
   #menu-item1 {
-    filter: none;
+    -webkit-filter: none;
+            filter: none;
   }
-
   #menu-item2 {
-    filter: none;
+    -webkit-filter: none;
+            filter: none;
   }
-
   #menu-item3 {
-    filter: none;
+    -webkit-filter: none;
+            filter: none;
   }
 }
+
 #menu-item1:hover {
-  filter: none;
+  -webkit-filter: none;
+          filter: none;
 }
 
 #menu-item2:hover {
-  filter: none;
+  -webkit-filter: none;
+          filter: none;
 }
 
 #menu-item3:hover {
-  filter: none;
+  -webkit-filter: none;
+          filter: none;
 }
 
 #galeriaItem1 {
@@ -197,9 +219,12 @@ nav {
   overflow: hidden;
   background-size: cover;
   background-position: center;
-  filter: blur(2px);
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
+
 #galeriaItem1 h3 {
   text-align: center;
   padding-top: 95%;
@@ -218,9 +243,12 @@ nav {
   overflow: hidden;
   background-size: cover;
   background-position: center;
-  filter: blur(2px);
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
+
 #galeriaItem2 h3 {
   text-align: center;
   padding-top: 95%;
@@ -239,9 +267,12 @@ nav {
   overflow: hidden;
   background-size: cover;
   background-position: center;
-  filter: blur(2px);
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
+
 #galeriaItem3 h3 {
   text-align: center;
   padding-top: 95%;
@@ -252,31 +283,42 @@ nav {
 
 @media only screen and (max-width: 576px) {
   #galeriaItem1 {
-    filter: none;
+    -webkit-filter: none;
+            filter: none;
   }
-
   #galeriaItem2 {
-    filter: none;
+    -webkit-filter: none;
+            filter: none;
   }
-
   #galeriaItem3 {
-    filter: none;
+    -webkit-filter: none;
+            filter: none;
   }
 }
+
 #galeriaItem1:hover {
-  filter: none;
+  -webkit-filter: none;
+          filter: none;
 }
 
 #galeriaItem2:hover {
-  filter: none;
+  -webkit-filter: none;
+          filter: none;
 }
 
 #galeriaItem3:hover {
-  filter: none;
+  -webkit-filter: none;
+          filter: none;
 }
 
 #form {
   padding: 50px 0;
+}
+
+.princ--1 {
+  text-transform: none;
+  border: none;
+  font-size: 22px;
 }
 
 footer {
@@ -288,9 +330,11 @@ footer {
   color: white;
   text-align: center;
 }
+
 footer h4 {
-  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
 }
+
 footer .container {
   padding: 10px 0;
   margin-bottom: 0px;
@@ -313,5 +357,4 @@ footer .container {
   list-style: none;
   padding: 5px 0;
 }
-
 /*# sourceMappingURL=style.css.map */
