@@ -16,17 +16,7 @@ main {
 }
 
 #headerPic {
-  height: 200px;
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
-  border-radius: 5px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-#headerPic:hover {
-  -webkit-backdrop-filter: blur(0px);
-          backdrop-filter: blur(0px);
+  height: 160px;
 }
 
 nav {
@@ -78,7 +68,7 @@ nav {
   font-weight: 900;
 }
 
-.princ, .princ--1 {
+.princ {
   font-size: 80px;
   font-family: "Yanone Kaffeesatz", sans-serif;
   font-weight: 600;
@@ -140,8 +130,7 @@ nav {
 #menu-item1 {
   background-image: url(pics/papel1.jpg);
   color: whitesmoke;
-  padding: 100px 0;
-  padding-left: 100px;
+  padding: 100px 100px;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -154,8 +143,7 @@ nav {
 #menu-item2 {
   background-image: url(pics/papel2.jpeg);
   color: #181818;
-  padding: 100px 0;
-  padding-left: 100px;
+  padding: 100px 100px;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -168,8 +156,7 @@ nav {
 #menu-item3 {
   background-image: url(pics/papel1.jpg);
   color: whitesmoke;
-  padding: 100px 0;
-  padding-left: 100px;
+  padding: 100px 100px;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -177,21 +164,6 @@ nav {
           filter: blur(2px);
   -webkit-transition: 0.5s;
   transition: 0.5s;
-}
-
-@media only screen and (max-width: 576px) {
-  #menu-item1 {
-    -webkit-filter: none;
-            filter: none;
-  }
-  #menu-item2 {
-    -webkit-filter: none;
-            filter: none;
-  }
-  #menu-item3 {
-    -webkit-filter: none;
-            filter: none;
-  }
 }
 
 #menu-item1:hover {
@@ -281,6 +253,10 @@ nav {
   font-size: 70px;
 }
 
+#gmap {
+  width: 100%;
+}
+
 @media only screen and (max-width: 576px) {
   #galeriaItem1 {
     -webkit-filter: none;
@@ -312,17 +288,17 @@ nav {
 }
 
 #form {
-  padding: 50px 0;
+  padding: 50px 0px;
 }
 
 .princ--1 {
   text-transform: none;
   border: none;
-  font-size: 22px;
+  padding-top: 25px;
 }
 
 footer {
-  padding: 80px 0px;
+  padding: 50px 0px;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -356,5 +332,42 @@ footer .container {
   background-color: limegreen;
   list-style: none;
   padding: 5px 0;
+}
+
+@media only screen and (max-width: 576px) {
+  #menuHead1 {
+    padding: 50px 20px;
+  }
+  .princ {
+    font-size: 40px;
+  }
+  .pPrinc {
+    font-size: 18px;
+    padding: 10px 10px;
+  }
+  .menut {
+    font-size: 35px;
+  }
+  #headerPic {
+    height: 80px;
+  }
+  #menu-item1 {
+    -webkit-filter: none;
+            filter: none;
+    padding: 50px 20px;
+  }
+  #menu-item2 {
+    -webkit-filter: none;
+            filter: none;
+    padding: 50px 20px;
+  }
+  #menu-item3 {
+    -webkit-filter: none;
+            filter: none;
+    padding: 50px 20px;
+  }
+  #form {
+    padding: 50px 20px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

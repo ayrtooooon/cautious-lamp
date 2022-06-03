@@ -26,15 +26,7 @@ main {
 }
 
 #headerPic {
-    height: 200px;
-    backdrop-filter: blur(5px);
-    border-radius: 5px;
-    transition: 0.5s;
-}
-
-
-#headerPic:hover {
-    backdrop-filter: blur(0px);
+    height: 160px;
 }
 
 nav {
@@ -151,8 +143,7 @@ $colores: (
 
 #menu-item1 {
     @include pics(url(pics/papel1.jpg), whitesmoke);
-    padding: 100px 0;
-    padding-left: 100px;
+    padding: 100px 100px;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -162,8 +153,7 @@ $colores: (
 
 #menu-item2 {
     @include pics(url(pics/papel2.jpeg), #181818);
-    padding: 100px 0;
-    padding-left: 100px;
+    padding: 100px 100px;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -173,27 +163,12 @@ $colores: (
 
 #menu-item3 {
     @include pics(url(pics/papel1.jpg), whitesmoke);
-    padding: 100px 0;
-    padding-left: 100px;
+    padding: 100px 100px;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     filter: blur(2px);
     transition: 0.5s;
-}
-
-@media only screen and (max-width: 576px) {
-    #menu-item1 {
-        filter: none;
-    }
-
-    #menu-item2 {
-        filter: none;
-    }
-
-    #menu-item3 {
-        filter: none;
-    }
 }
 
 #menu-item1:hover {
@@ -274,6 +249,10 @@ $colores: (
     }
 }
 
+#gmap {
+    width: 100%;
+}
+
 @media only screen and (max-width: 576px) {
     #galeriaItem1 {
         filter: none;
@@ -301,18 +280,17 @@ $colores: (
 }
 
 #form {
-    padding: 50px 0;
+    padding: 50px 0px;
 }
 
 .princ--1 {
-    @extend .princ;
     text-transform: none;
     border: none;
-    font-size: 22px;
+    padding-top: 25px;
 }
 
 footer {
-    padding: 80px 0px;
+    padding: 50px 0px;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -341,5 +319,41 @@ $redes: (
         background-color: $color;
         list-style: none;
         padding: 5px 0;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #menuHead1 {
+        padding: 50px 20px;
+    }
+    .princ {
+        font-size: 40px;
+    }
+    .pPrinc {
+        font-size: 18px;
+        padding: 10px 10px;
+    }
+    .menut {
+        font-size: 35px;
+    }
+    #headerPic {
+        height: 80px;
+    }
+    #menu-item1 {
+        filter: none;
+        padding: 50px 20px;
+    }
+
+    #menu-item2 {
+        filter: none;
+        padding: 50px 20px;
+    }
+
+    #menu-item3 {
+        filter: none;
+        padding: 50px 20px;
+    }
+    #form {
+        padding: 50px 20px;
     }
 }
